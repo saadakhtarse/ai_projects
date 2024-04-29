@@ -35,7 +35,7 @@ for intent in intents['intents']:
         # Tokenize each pattern into words
         word_list = nltk.word_tokenize(pattern)     # Token -> [(I love coding) -> ("I", "love", "coding")]
         words.extend(word_list)                     # Add each list of tokens to the overall set of words
-        documents.append((word_list, intent['tag']))    # Each document is a tuple containing a list of tokens and it's
+        documents.append((word_list, intent['tag']))    # Each document is a tuple containing a list of tokens and it's 'tag'
         if intent['tag'] not in classes:               # If the class hasn't been added yet, add it
             classes.append(intent['tag'])               # Add new class to classes list 
 
